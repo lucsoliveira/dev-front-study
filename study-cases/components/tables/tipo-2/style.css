@@ -1,0 +1,164 @@
+/* Generic table stylings */
+table {
+  width: 100%;
+}
+table tbody td,
+table thead th,
+table tfoot th {
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  border-collapse: collapse;
+}
+table tbody tr:nth-child(even),
+table thead tr,
+table tfoot tr {
+  background: #f9f9f9;
+}
+
+/* new Table stylings */
+.tableContainer {
+  /*height: 400px;*/
+  overflow: auto;
+  width: 100%;
+  background: #fff;
+}
+.tableContainer thead,
+.tableContainer thead tr,
+.tableContainer thead tr th,
+.tableContainer tfoot,
+.tableContainer tfoot tr,
+.tableContainer tfoot tr th {
+  line-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border-top: none;
+  height: 0;
+  vertical-align: bottom;
+}
+.tableContainer thead tr th {
+  padding: 0 10px;
+}
+.tableContainer table tbody td:first-child {
+  border-left: none;
+}
+.tableContainer table {
+  margin-top: -1px;
+}
+
+.t_header,
+.t_header thead,
+.t_footer,
+.t_footer tfoot {
+  display: block;
+}
+.t_header thead th,
+.t_footer tfoot th {
+  display: inline-block;
+  border: none;
+  border-left: 1px solid #dfdfdf;
+  position: relative;
+}
+.t_header thead th:first-child,
+.t_footer tfoot th:first-child {
+  border-left: none;
+}
+.t_header,
+.t_footer {
+  overflow: hidden;
+  background: #f2f2f2;
+}
+.t_header {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+.t_footer {
+  border-top: 1px solid #dfdfdf;
+}
+
+.t_container {
+  border: 1px solid #dfdfdf;
+}
+
+#search {
+  display: inline-block;
+  float: right;
+}
+.t_search {
+  padding: 4px;
+}
+.t_search input {
+  border: 1px solid #aaa;
+  height: 32px;
+  box-sizing: border-box;
+  padding: 6px 10px;
+}
+.searchIcon {
+  display: inline-block;
+  width: 30px;
+  height: 32px;
+  background: #eee;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-right: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* Sorting table */
+table.sortable thead tr th,
+table.sortable tfoot tr th {
+  padding-right: 30px;
+}
+table.sortable thead tr th {
+  cursor: pointer;
+}
+.t_header.sortable thead tr th:after {
+  content: " ";
+  padding: 3px;
+  display: inline-block;
+  position: absolute;
+  right: 7px;
+  top: 10px;
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+  background: red;
+}
+.t_header.sortable thead tr th.down:after {
+  content: "\\/";
+}
+.t_header.sortable thead tr th.up:after {
+  content: "/\\";
+}
+
+table.hoverable tbody tr:hover {
+  background: #ecf3f8;
+}
+
+/* Other */
+html,
+body {
+  height: 100%;
+  background: #444;
+  font-family: arial;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background: #fafafa;
+  height: 100%;
+  padding: 0 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+*,
+*:before,
+*:after {
+  /*box-sizing: border-box;*/
+}
